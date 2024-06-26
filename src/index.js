@@ -6,18 +6,13 @@ addEventListener("fetch", (event) => {
 const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
-  // production
-  "docker.libcuda.so": dockerHub,
-  "quay.libcuda.so": "https://quay.io",
-  "gcr.libcuda.so": "https://gcr.io",
-  "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
-  "k8s.libcuda.so": "https://registry.k8s.io",
-  "ghcr.libcuda.so": "https://ghcr.io",
-  "cloudsmith.libcuda.so": "https://docker.cloudsmith.io",
-  "ecr.libcuda.so": "https://public.ecr.aws",
-
-  // staging
-  "docker-staging.libcuda.so": dockerHub,
+  "docker.xzlive.xyz": "https://registry-1.docker.io",
+  "quay.xzlive.xyz": "https://quay.io",
+  "gcr.xzlive.xyz": "https://gcr.io",
+  "k8s-gcr.xzlive.xyz": "https://k8s.gcr.io",
+  "k8s.xzlive.xyz": "https://registry.k8s.io",
+  "ghcr.xzlive.xyz": "https://ghcr.io",
+  "cloudsmith.xzlive.xyz": "https://docker.cloudsmith.io",
 };
 
 function routeByHosts(host) {
